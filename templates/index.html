@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambiente Seguro para Idosos</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ambiente Seguro para Idosos</h1>
+        <nav>
+            <ul>
+                <li><a href="#informacoes">Informações</a></li>
+                <li><a href="#prevencao">Prevenção de Abusos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="informacoes">
+            <h2>Direitos dos Idosos</h2>
+            <p>
+                Os idosos têm direitos garantidos por lei, que incluem:<br><br>
+                1. <strong>Direito à Dignidade:</strong> Todo idoso tem o direito de ser tratado com respeito e
+                dignidade, sem discriminação.<br><br>
+                2. <strong>Acesso à Saúde:</strong> É direito do idoso receber cuidados de saúde adequados, incluindo
+                acesso a medicamentos e tratamentos.<br><br>
+                3. <strong>Participação Social:</strong> Os idosos devem ter a oportunidade de participar ativamente na
+                sociedade, em atividades culturais, sociais e esportivas.<br><br>
+                4. <strong>Proteção Contra Abusos:</strong> Existem leis que protegem os idosos de qualquer forma de
+                abuso, seja físico, psicológico ou financeiro.<br><br>
+                5. <strong>Apoio Financeiro:</strong> O idoso tem direito a benefícios financeiros, como aposentadoria,
+                e assistência social, quando necessário.
+            </p>
+        </section>
+
+        <section id="prevencao">
+            <h2>Prevenção de Abusos</h2>
+            <p>A prevenção de abusos contra idosos é fundamental para garantir seu bem-estar e dignidade. Aqui estão
+                algumas medidas importantes:</p>
+            <p>1. <strong>Educação e Conscientização:</strong> Informar idosos e suas famílias sobre os direitos e
+                formas de abuso é essencial. Workshops e palestras podem ajudar a identificar sinais de abuso.</p>
+            <p>2. <strong>Monitoramento de Situações de Risco:</strong> Fique atento a mudanças no comportamento dos
+                idosos, como isolamento social ou medo excessivo, que podem indicar abuso.</p>
+            <p>3. <strong>Denúncia:</strong> Incentive a denúncia de abusos. Existem canais específicos para reportar
+                casos de violência contra idosos.</p>
+            <p>4. <strong>Apoio Psicológico:</strong> Oferecer suporte psicológico pode ajudar os idosos a se sentirem
+                seguros e confiantes para compartilhar suas experiências.</p>
+            <p>5. <strong>Formação de Redes de Apoio:</strong> Criar uma rede de apoio entre vizinhos, amigos e
+                familiares pode ser uma forma eficaz de proteger os idosos de possíveis abusos.</p>
+            <p>6. <strong>Legislação:</strong> Conheça as leis que protegem os idosos e busque a aplicação delas. A Lei
+                Maria da Penha e o Estatuto do Idoso são exemplos de proteção legal.</p>
+
+        </section>
+
+        <section id="contato">
+            <h2>Deixe aqui sua dúvida:</h2>
+            <form action="http://127.0.0.1:5000/contact" method="POST">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="doubt">Dúvida:</label>
+                <textarea id="doubt" name="doubt" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ambiente Seguro para Idosos. Todos os direitos reservados</p>
+        <div class="github-icon">
+            <a href="https://github.com/palomarocha">
+                <img src="/templates/image/github-mark-white.png" alt="github-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
