@@ -8,7 +8,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'palomarochamochi138@gmail.com'
-app.config['MAIL_PASSWORD'] = 'qfds qplq bexz myrz'
+app.config['MAIL_PASSWORD'] = 'csym kfbm puoh pabw'
 mail = Mail(app)
 
 @app.route('/')
