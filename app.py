@@ -1,8 +1,7 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, send_file
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
-
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
@@ -13,14 +12,13 @@ mail = Mail(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return send_file('index.html')
 
 @app.route('/contact', methods=['POST'])
 def contact():
     email = request.form['email']
     doubt = request.form['doubt']
 
-  
     msg = Message('Nova Dúvida de Contato', sender='palomarochamochi138@gmail.com', recipients=['palomarochamochi138@gmail.com'])
     msg.body = f'Dúvida: {doubt}\n\nResposta será enviada para: {email}'
     mail.send(msg)
